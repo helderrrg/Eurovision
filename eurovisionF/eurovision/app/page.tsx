@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     const fetchOdds = async () => {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/odds`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`);
         if (!response.ok) {
           throw new Error("Error searching for API information");
         }
